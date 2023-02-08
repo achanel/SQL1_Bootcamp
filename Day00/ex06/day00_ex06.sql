@@ -4,3 +4,8 @@ SELECT
      FROM person WHERE person.id = person_order.person_id)
 FROM person_order
 WHERE (menu_id = 13 OR menu_id = 14 OR menu_id = 18) AND order_date = '2022-01-07';
+
+-- - The result is below (raw ordering should be the same like below)
+
+--     Denis	true
+--     Nataly	false
