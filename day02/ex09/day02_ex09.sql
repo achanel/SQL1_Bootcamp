@@ -5,3 +5,8 @@ WHERE gender = 'female')
 SELECT md.name FROM md WHERE pizza_name = 'pepperoni pizza'
 INTERSECT
 SELECT md.name FROM md WHERE pizza_name = 'cheese pizza';
+
+-- - The result is below (raw ordering should be the same like below)
+
+--        "Anna"
+--        "Nataly"

@@ -5,3 +5,8 @@ WHERE gender = 'male'
   AND (address = 'Moscow' OR address = 'Samara')
   AND (pizza_name = 'pepperoni pizza' OR pizza_name = 'mushroom pizza')
 ORDER BY person.name DESC;
+
+-- - The result is below (raw ordering should be the same like below)
+
+--       "Dmitriy"
+--       "Andrey"
