@@ -17,3 +17,13 @@ SELECT *
 FROM v6
 WHERE person_id NOT IN (SELECT person_id FROM v2)
 ORDER BY person_id;
+
+-- - The check script is below.
+
+    -- SELECT *
+    -- FROM v_symmetric_union
+
+-- -The result below (raw ordering should be the same like on a screen below)
+
+    -- "2"
+    -- "8"

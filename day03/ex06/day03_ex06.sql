@@ -8,3 +8,9 @@ SELECT p1.pizza_name, p1.name AS pizzeria_name_1,
                           AND p1.price = p2.price
                           AND p1.name < p2.name
 ORDER BY p1.pizza_name;
+
+-- - The result is below (raw ordering should be the same like below)
+
+--     cheese pizza	Best Pizza	Papa Johns	700
+--     pepperoni pizza DinoPizza Best Pizza  800
+--     supreme pizza	Best Pizza	DoDo Pizza	850

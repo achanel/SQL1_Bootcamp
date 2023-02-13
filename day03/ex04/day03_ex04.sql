@@ -13,3 +13,7 @@ FROM (
          (SELECT * FROM po_female EXCEPT SELECT * FROM po_male)
      ) AS u
 ORDER BY pizzeria_name;
+
+-- - The result is below (raw ordering should be the same like below)
+
+--         "Papa Johns"

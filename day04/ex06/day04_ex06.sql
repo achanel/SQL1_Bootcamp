@@ -8,3 +8,12 @@ INTERSECT
     SELECT pizzeria.name
     FROM pizzeria JOIN menu ON pizzeria.id = menu.pizzeria_id
     WHERE price < 800;
+
+-- - The check script is below.
+
+    -- SELECT *
+    -- FROM mv_dmitriy_visits_and_eats
+
+-- -The result below (raw ordering should be the same like on a screen below)
+
+    -- "Papa Johns"

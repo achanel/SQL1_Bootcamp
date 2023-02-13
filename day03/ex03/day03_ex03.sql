@@ -12,3 +12,9 @@ FROM (
     (SELECT * FROM pv_female EXCEPT ALL SELECT * FROM pv_male)
      ) AS uall
 ORDER BY pizzeria_name;
+
+-- - The result is below (raw ordering should be the same like below)
+
+--       "Best Pizza"
+--       "Dominos"
+--       "Papa Johns"
