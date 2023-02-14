@@ -9,3 +9,7 @@ SELECT pizza_name AS pizza_name,
 FROM menu
          INNER JOIN pizzeria ON pizzeria_id = pizzeria.id
 ORDER BY 1, 2;
+
+-- - The result should contain a part of text below.
+
+--       "Index Scan using idx_1 on pizzeria pz  ..."

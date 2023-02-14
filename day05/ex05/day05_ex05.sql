@@ -8,3 +8,7 @@ EXPLAIN (ANALYSE, TIMING OFF)
 SELECT *
 FROM person_order
 WHERE order_date = '2022-01-01';
+
+-- - The result should contain a part of text below.
+
+--       "Index Only Scan using idx_person_order_order_date on person_order  ..."
