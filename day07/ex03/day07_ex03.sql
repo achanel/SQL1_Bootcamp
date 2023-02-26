@@ -13,3 +13,13 @@ SELECT pizzeria.name, sum.total_count
         JOIN pizzeria
         ON pizzeria.id = sum.pizzeria_id
 ORDER BY total_count DESC, name;
+
+
+-- - The result is below (raw ordering should be the same like below)
+
+--       "Dominos"	"13"
+--       "DinoPizza"	"9"
+--       "Best Pizza"	"8"
+--       "Pizza Hut"	"8"
+--       "Papa Johns"	"5"
+--       "DoDo Pizza"	"1"

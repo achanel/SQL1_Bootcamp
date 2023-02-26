@@ -5,7 +5,7 @@ CREATE INDEX idx_person_order_order_date
 SET enable_seqscan = OFF;
 
 EXPLAIN (ANALYSE, TIMING OFF)
-SELECT *
+SELECT person_id, menu_id
 FROM person_order
 WHERE order_date = '2022-01-01';
 

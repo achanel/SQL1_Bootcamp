@@ -1,11 +1,15 @@
-WITH pvg AS (
-    SELECT person_id, COUNT(*) AS count_of_visits
-      FROM person_visits
-  GROUP BY person_id
-)
-SELECT person.name, pvg.count_of_visits
-  FROM pvg
-      JOIN person
-        ON pvg.person_id = person.id
-ORDER BY pvg.count_of_visits DESC, pvg.person_id
-LIMIT 4;
+SELECT name, COUNT(person_id)
+    AS count_of_visits
+FROM person_visits
+    LEFT JOIN person
+        ON person_visits.person_id = person.id
+GROUP BY 1
+ORDER BY 2
+DESC LIMIT 4;
+
+-- - The result is below (raw ordering should be the same like below)
+
+--       "Dmitriy"	"4"
+--       "Denis"	"3"
+--       "Irina"	"3"
+--       "Nataly"	"3"

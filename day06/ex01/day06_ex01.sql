@@ -11,3 +11,12 @@ SELECT ROW_NUMBER() OVER (), order_count.person_id, order_count.pizzeria_id,
             WHEN order_count.count = 2 THEN 22
             ELSE 30 END
 FROM order_count;
+
+-- - The SQL script looks like below.
+
+--       select count(*) > 0 as check
+--       from person_discounts                
+
+-- - The result is below (raw ordering should be the same like below)
+
+--       "true"

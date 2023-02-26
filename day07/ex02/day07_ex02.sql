@@ -14,3 +14,12 @@ UNION (
 JOIN pizzeria
 ON pizzeria.id = agg.pizzeria_id
 ORDER BY action_type, count DESC;
+
+-- - The result is below (raw ordering should be the same like below)
+
+--       "Dominos"	"6"	"order"
+--       "Best Pizza"	"5"	"order"
+--       "DinoPizza"	"5"	"order"
+--       "Dominos"	"7"	"visit"
+--       "DinoPizza"	"4"	"visit"
+--       "Pizza Hut"	"4"	"visit"
